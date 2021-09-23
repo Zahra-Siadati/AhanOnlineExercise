@@ -12,7 +12,7 @@ Two Tables:
 * The ProfitRatio is stored as integer.
 * The ProfitRatio is considerd 10% for those products which do not exist in SalesProfit table.
 ## Preparation
-* * Copy given data to two seprate .csv files.
+* Copy given data to two seprate .csv files.
 * Create two tables using given information and SQL queris.
 * Insert the data from each .csv file into corresponding table using SQL queris.
 * Check if the tables are already existed or not.
