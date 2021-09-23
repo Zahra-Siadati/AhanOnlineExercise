@@ -63,3 +63,11 @@ select Product, sum(Quantity) TotalSoldQuantity
 from Sales group by Product
 
 /************************************************************************/
+
+/*Question #4: Show The Customers With Purchase More Than 1500*/
+select Customer,sum(Quantity * UnitPrice) as TotalPrice, COUNT(OrderID) as TotalOrders, COUNT(Product) as TotalProducts
+from Sales
+group by Customer
+having  sum(Quantity * UnitPrice) >= 1500
+
+/************************************************************************/

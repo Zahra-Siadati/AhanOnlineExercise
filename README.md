@@ -26,4 +26,10 @@ Two Tables:
 * I think there is no need to further explanation for this question. ;)
 ## Solve Question Number 3:
 * To find the total number of quantities for each product:
-* To answer this question, we should calcualte the SUM of quantities for each product and show them in a table. By visiting the suggested query, you can findout more datails.
+* To answer this question, we should calculate the SUM of quantities for each product and show them in a table. By visiting the suggested query, you can findout more datails.
+## Solve Question Number 4:
+* To find the list of those customers who have at least one invoice with more than 1500 cost and show the total cost, total number of invoices and total number of purchased products.
+* I assumed that the OrderID in Sales table points to the invoices.
+* To answer this question we should calculate the amount of money each customer has spent. It means that we should calculate the SUM of multiplication of each product's Quantity and its UnitPrice for all orders of each customer.
+* Then, we should check if the result of the previous step is equal or more than 1500 or not.
+
