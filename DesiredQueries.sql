@@ -20,3 +20,29 @@ create table SalesProfit (
 	ProfitRatio int
 	);
 /**************************************************************************/
+
+/*Insert Data From SalesData.CSV File Into Sales Table*/
+IF NOT EXISTS (SELECT 1 FROM Sales)
+BULK INSERT Sales
+FROM 'D:\Exercise\AhanOnline\SalesData.csv'
+WITH
+(
+    FIRSTROW = 2, -- as 1st one is header
+    FIELDTERMINATOR = ',',  --CSV field delimiter
+    ROWTERMINATOR = '\n',   --Use to shift the control to next row
+    TABLOCK
+);
+/***************************************************************************/
+
+/*Insert Data From ProfitRatio.CSV File Into Sales Table*/
+IF NOT EXISTS (SELECT 1 FROM SalesProfit)
+BULK INSERT SalesProfit
+FROM 'D:\Exercise\AhanOnline\ProfitRatio.csv'
+WITH
+(
+    FIRSTROW = 2, -- as 1st one is header
+    FIELDTERMINATOR = ',',  --CSV field delimiter
+    ROWTERMINATOR = '\n',   --Use to shift the control to next row
+    TABLOCK
+);
+/***************************************************************************/
