@@ -23,4 +23,7 @@ Two Tables:
 * To find the income of the company, we should calculate the sum of all sold products prices. So, in Sales table for each row we should calculate "the multiplication of the Quantity of each products and its UnitPrice". Then, we should calculate the SUM of that multiplication for all rows.
 ## Solve Question Number 2:
 * To find the total number of distinct customers:
-* I think there is no need to further explanation for this question. ;) 
+* I think there is no need to further explanation for this question. ;)
+## Solve Question Number 3:
+* To find the total number of quantities for each product:
+* To answer this question, we should calcualte the SUM of quantities for each product and show them in a table. By visiting the suggested query, you can findout more datails.

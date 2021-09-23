@@ -12,7 +12,7 @@ create table Sales (
 	);
 /*************************************************************************/
 
-	/*Create Profit Table*/
+/*Create Profit Table*/
 
 if not exists (select * from sysobjects where name='SalesProfit' and xtype='U')
 create table SalesProfit (
@@ -57,3 +57,9 @@ select COUNT(distinct  Customer) as NumbreOfCustomers
 from Sales;
 
 /*************************************************************************/
+
+/*Question #3: Number Of Purchase Per Product*/
+select Product, sum(Quantity) TotalSoldQuantity
+from Sales group by Product
+
+/************************************************************************/
