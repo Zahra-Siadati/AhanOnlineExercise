@@ -51,3 +51,9 @@ WITH
 select SUM(Quantity * UnitPrice) as TotalPurchase
 from Sales;
 /**************************************************************************/
+
+/*Question #2: Number Of Distinct Cutomers */
+select COUNT(distinct  Customer) as NumbreOfCustomers
+from Sales;
+
+/*************************************************************************/
