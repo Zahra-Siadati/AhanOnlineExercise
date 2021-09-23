@@ -32,4 +32,13 @@ Two Tables:
 * I assumed that the OrderID in Sales table points to the invoices.
 * To answer this question we should calculate the amount of money each customer has spent. It means that we should calculate the SUM of multiplication of each product's Quantity and its UnitPrice for all orders of each customer.
 * Then, we should check if the result of the previous step is equal or more than 1500 or not.
-
+## Solve Question Number 5:
+* To find the total profit and the profit percentage of total income:
+* To calculate the total profit of the company, we sholud calculate the multiplication of ProfitRatio from SalesProfit table and SUM of multiplication of Quantity and UnitPrice  for each item. In other words, we should first calculate the total amount of income from each product and then calculate the profit of each product. The total profit would be the sum of all products profits.
+* Please notice that we stored ProfitRatio as integer. So, now we should devide the total profit calculated in the previous step by 100.
+* Remember the assumptions. The ProfitRatio is considerd 10% for those products which do not exist in SalesProfit table.
+* To calculate the profit percentage, we should join the SalesProfit table with a table containing Product list and their correponding total income.
+* We should check if any product has been dimissed in SalesProfit table and considering assumptions consider 10% profit for them.
+* The total profit percentage would be calculating by division of total profit and total income multiplied by 100.
+* Keep in mind that we stored UnitPrice as integer. So, as the total profit supposed to be less than the total income, the division mentioned above would return 0.
+* To Solve this Problem, we should CAST total profit and total income into float.

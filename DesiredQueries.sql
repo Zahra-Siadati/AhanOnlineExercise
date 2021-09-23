@@ -71,3 +71,14 @@ group by Customer
 having  sum(Quantity * UnitPrice) >= 1500
 
 /************************************************************************/
+
+/*Question #5: The Percentage And Total Amount Of Profit */
+select
+sum((TotalProductCost*ProfitRatio)/100) as TotalProfit,
+(CAST(sum((TotalProductCost*ProfitRatio)/100) as float)/CAST(sum(TotalProductCost)as float))*100 as ProfitPercentage
+from (select SoldAmounts.Product, TotalProductCost, isnull(ProfitRatio, 10) as ProfitRatio
+		from (select Product,sum(Quantity*UnitPrice) TotalProductCost from Sales group by Product) as SoldAmounts
+		left join SalesProfit
+		on SoldAmounts.Product = SalesProfit.Product)  as ProductCostProfitRatio
+
+/*************************************************************************/
