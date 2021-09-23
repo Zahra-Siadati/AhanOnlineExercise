@@ -46,3 +46,8 @@ WITH
     TABLOCK
 );
 /***************************************************************************/
+
+/*Question #1: Calculating Total Sell*/
+select SUM(Quantity * UnitPrice) as TotalPurchase
+from Sales;
+/**************************************************************************/

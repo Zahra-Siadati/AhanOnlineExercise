@@ -17,4 +17,8 @@ Two Tables:
 * Insert the data from each .csv file into the corresponding tables using SQL queris.
 * Check if the each table is already existed or not.
 * Check if each table is empty or not.
-
+## Solve Question Number 1:
+* To find the total sell of the company:
+* I assumed that this question is about the company's income.
+* To find the income of the company, we should calculate the sum of all sold products prices. So, in Sales table for each row we should calculate "the multiplication of the Quantity of each products and its UnitPrice". Then, we should calculate the SUM of that multiplication for all rows.
+ 
