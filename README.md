@@ -14,7 +14,7 @@ Two Tables:
 ## Preparation
 * Copy given data to two seprate .csv files.
 * Create two tables using given information and SQL queris.
-* Insert the data from each .csv file into corresponding table using SQL queris.
-* Check if the tables are already existed or not.
+* Insert the data from each .csv file into the corresponding tables using SQL queris.
+* Check if the each table is already existed or not.
 * Check if each table is empty or not.
 
