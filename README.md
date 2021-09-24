@@ -14,7 +14,7 @@ Two Tables:
 * The ProfitRatio is considerd 10% for those products which do not exist in SalesProfit table.
 ## Preparation
 * Copy given data to two seprate .csv files.
-* Create two tables using given information and SQL queris.
+* Create two tables using given information and SQL queries.
 * Insert the data from each .csv file into the corresponding tables using SQL queris.
 * Check if the each table is already existed or not.
 * Check if each table is empty or not.
